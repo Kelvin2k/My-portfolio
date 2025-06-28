@@ -185,7 +185,7 @@ header .collapse .nav-link:hover {
 /* Min-width sets the minimum width from the specified value to infinity. */
 @media screen and (min-width: 576px) {
     .cyber_carousel h5 {
-        color: red;
+        color: blue;
     }
     .project_title h2 {
         color: orange;
