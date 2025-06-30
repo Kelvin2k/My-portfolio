@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* start css header  */
 
 header .collapse .nav-link {
@@ -181,12 +185,48 @@ header .collapse .nav-link:hover {
     margin-bottom: 20px;
 }
 
+/* start award css */
+.award {
+    height: 600px;
+    width: 100%;
+    background-image: url(./../image/memphis_3.png);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    /* text-align: center; */
+}
+
+.award .container .card {
+    width: 40vw !important;
+    margin-right: 50px;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.27);
+    backdrop-filter: blur(9px);
+    background: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 44px 22px rgba(255, 255, 255, 2.2);
+}
+
+.award .container .award_content {
+    width: 60vw;
+}
+
+.award .award_icon img {
+    height: 100px;
+    width: auto;
+}
+
 /* Code within @media will apply when viewed on devices with a browser viewport wider than 1200px. */
 /* Min-width sets the minimum width from the specified value to infinity. */
+
 @media screen and (min-width: 576px) {
-    .cyber_carousel h5 {
-        color: blue;
-    }
     .project_title h2 {
         color: orange;
     }
@@ -196,6 +236,33 @@ header .collapse .nav-link:hover {
     .project_title h2 {
         color: red;
     }
+}
+
+/* start footer  */
+footer {
+    background-color: black;
+    height: 500px;
+    color: white;
+}
+
+footer .footer_icon .fa-brands {
+    font-size: 30px;
+    width: auto;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    /* color: green; */
+}
+
+footer .footer_icon .fa-brands:hover {
+    border-color: green;
+    color: green;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Max-width is used when designing UI for larger devices first, such as PCs, laptops, or TVs. */
@@ -210,11 +277,60 @@ header .collapse .nav-link:hover {
     header .navbar-brand span {
         color: red !important;
     }
+    /* header */
+    header .navbar-toggler {
+        background-color: green;
+    }
 }
 
 /* handheld device */
+
+@media screen and (max-width: 1440px) {
+    .award .award_icon img {
+        height: 80px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .award .award_icon img {
+        height: 60px;
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 576px) {
     header .navbar-brand span {
         color: yellow !important;
+    }
+    .award .card-body b {
+        font-size: 18px;
+    }
+    .award .card-body p {
+        font-size: 15px;
+    }
+    .award .award_content_up p {
+        font-size: 15px;
+    }
+    .award .award_icon img {
+        height: 40px;
+        width: auto;
+    }
+    .award .award_icon img {
+        height: 30px;
+        width: auto;
+    }
+    .award .card-body {
+        padding: 0px 0px;
+    }
+
+    footer .footer_icon .fa-brands {
+        font-size: 20px;
+        width: auto;
+        padding: 10px 10px;
+        margin: 10px 10px;
+        border: 1px solid;
+        border-radius: 50%;
+        /* color: green; */
     }
 }

@@ -70,7 +70,7 @@
 
   <!-- carousel  -->
   <section class="cyber_carousel">
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -83,7 +83,7 @@
         <div class="carousel-item position-absolute h-100 active">
           <img src="./image/finland.jpg" class="d-block w-100" alt="..." />
           <div class="overlay"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <img class="animate__animated animate__fadeInUp" src="./image/01-3.jpg" alt="" />
             <h5 class="animate__animated animate__fadeInUp animate__delay-1s">
               Our goals. Our mission.
@@ -95,7 +95,7 @@
         </div>
         <div class="carousel-item h-100">
           <img src="./image/mountains.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <img class="animate__animated animate__fadeInUp" src="./image/02-3.jpg" alt="" />
             <h5 class="animate__animated animate__fadeInUp animate__delay-1s">
               Our goals. Our mission.
@@ -275,7 +275,7 @@
         <!-- display 2 item on ipad and 3 item on laptop screen and 1 item on mobile -->
         <div class="row g-5 justify-content-center">
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="avai_item">
+            <div class="avai_item animate__animated animate__fadeInDown wow">
               <i class="fa-solid fa-paintbrush"></i>
               <h3>Design</h3>
               <p>
@@ -286,7 +286,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="avai_item">
+            <div class="avai_item animate__animated animate__fadeInDown wow">
               <i class="fa-solid fa-paintbrush"></i>
               <h3>Design</h3>
               <p>
@@ -297,7 +297,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="avai_item">
+            <div class="avai_item animate__animated animate__fadeInDown wow">
               <i class="fa-solid fa-paintbrush"></i>
               <h3>Design</h3>
               <p>
@@ -314,10 +314,50 @@
   </section>
 
   <!-- award  -->
-  <section class="award"></section>
+  <section class="award">
+    <div class="container d-flex w-100">
+      <div class="card w-50">
+        <div class="card-body">
+          <h2><b>Achievement and Award</b></h2>
+          <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the
+            cards
+            content.</p>
+        </div>
+      </div>
+      <div class="award_content w-50">
+        <div class=" award_content_up">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsam. Nobis natus dolores commodi
+            soluta voluptate animi, alias mollitia quod, officia a voluptas. Autem adipisci explicabo facere
+            consequuntur illo quisquam alias itaque et fuga maiores voluptatem possimus eligendi minus labore fugit ea
+            aliquid, debitis neque, quis magni repellat? Culpa, temporibus!
+          </p>
+        </div>
+        <div class="award_icon d-flex w-100">
+          <img src="./image/award-1.png" alt="">
+          <img src="./image/award-2.png" alt="">
+          <img src="./image/award-3.png" alt="">
+          <img src="./image/award-4.png" alt="">
+          <img src="./image/award-5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- footer  -->
-  <footer></footer>
+  <footer>
+    <div class="container text-lg-center py-5">
+      <div class="footer_icon d-flex justify-content-center">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <hr>
+      <p>© 2021 CyberPortfolio. All rights reserved | Designed by CyberSoft</p>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
